@@ -1,0 +1,64 @@
+---
+title: "ChatGPT: AI tools"
+author: "Ali Abbas"
+format: 
+  revealjs:
+    slide-number: true
+    incremental: false
+    width: 1920
+    height: 1080
+    logo: "https://www.mrc-epid.cam.ac.uk/wp-content/uploads/2021/10/colour-epi-logo.png"
+    css: ["theme/theme.css"]
+    theme: [dark]
+  html:
+    code-copy: true
+editor: source
+execute: 
+  echo: true
+  warning: false
+  message: false
+  size: "huge"
+---
+
+## Agenda
+
+-   Intro to ChatGPT
+-   Examples
+-   Tools using ChatGPT (or similar) modes
+-   Ethical issues
+-   Q/A
+
+## ChatGPT {background-color="red"}
+
+-   [ChatGPT: Optimizing Language Models for Dialogue](https://openai.com/blog/chatgpt/)
+-   Created by [OpenAI](https://openai.com)
+-   Debut in November 2022
+-   Viral due to usability and accessibility
+-   Built on GPT-3.5 series with Reinforcement Learning from Human Feedback
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## gif
+
+![](https://media.giphy.com/media/xUOxf7XfmpxuSode1O/giphy.gif)
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+library(openai)
+library(magick)
+
+td <- create_image("simplicity")
+
+print(image_read(td$data$url))
+
+```
