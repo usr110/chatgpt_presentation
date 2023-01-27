@@ -10,7 +10,7 @@ format:
     embed-resources: false
     preview-links: true
     logo: "https://www.mrc-epid.cam.ac.uk/wp-content/uploads/2021/10/colour-epi-logo.png"
-    footer: "https://usr110.github.io/chatgpt_presentation/presentation.html"
+    footer: "Access at [GitHub Pages](https://usr110.github.io/chatgpt_presentation/presentation.html)"
     css: ["theme/theme.css"]
     theme: [dark, theme/custom.scss]
   html:
@@ -32,6 +32,14 @@ bibliography: references.bib
 -   Tools using OpenAI models like ChatGPT (or similar) models
 -   Issues
 -   Summary
+
+::: {.notes}
+Not an expert so talking as someone with an interest in this area
+Brief overview of OpenAI and ChatGPT
+Some examples using OpenAI models - like GPT 3
+Might take you on a tour of an AI tool 
+Issues and summary at the end
+:::
 
 # ChatGPT
 
@@ -112,17 +120,21 @@ OpenAI's powerful text-davinci-003 language model to translate natural language 
 
 [![](img/rtutor.png){fig-alt="OpenAI's powerful text-davinci-003 language model to translate natural language into R code"}](https://rtutor.ai/)
 
-# [gptstudio](https://github.com/MichelNivard/gptstudio)
+# [GPT Tools](https://jameshwade.github.io/gpttools/)
 
 ## Comment code
 
-[![Comment Code](https://user-images.githubusercontent.com/6314313/209890944-3d6a00fa-2d8c-4df7-8a11-f5a5ec3a1391.mov)](https://jameshwade.github.io/gpttools/)
+<video data-autoplay src="https://user-images.githubusercontent.com/6314313/209890944-3d6a00fa-2d8c-4df7-8a11-f5a5ec3a1391.mov" width="100%" height="85%">
+
+[![Comment Code]()](https://jameshwade.github.io/gpttools/)
 
 ## Convert a Script into Functions
 
-[Convert](https://user-images.githubusercontent.com/6314313/209890949-4da2bdd7-bcac-4769-9b11-7759b4abb760.mov)\](https://jameshwade.github.io/gpttools/)
+<video data-autoplay src="https://user-images.githubusercontent.com/6314313/209890949-4da2bdd7-bcac-4769-9b11-7759b4abb760.mov" width = "100%" height="85%">
 
-# [GPT Studio](https://jameshwade.github.io/gpttools/)
+<!-- [Convert](https://user-images.githubusercontent.com/6314313/209890949-4da2bdd7-bcac-4769-9b11-7759b4abb760.mov)\](https://jameshwade.github.io/gpttools/) -->
+
+## [GPT Studio](https://github.com/MichelNivard/gptstudio)
 
 Add-on for RStudio for incorportaing OpenAI into project workflows
 
@@ -196,8 +208,6 @@ An AI tools library
 
 ::: nonincremental
 -   [Futurepedia: AI Tools directory](https://www.futurepedia.io/)
--   Bommasani, Rishi, Drew A. Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S. Bernstein et al. "On the opportunities and risks of foundation models." arXiv preprint arXiv:2108.07258 (2021).
--   Gozalo-Brizuela, Roberto, and Eduardo C. Garrido-Merchan. "ChatGPT is not all you need. A State of the Art Review of large Generative AI models." arXiv preprint arXiv:2301.04655 (2023).
 -   Chen, M., Tworek, J., Jun, H., Yuan, Q., Pinto, H. P. D. O., Kaplan, J., \... & Zaremba, W. (2021). Evaluating large language models trained on code. *arXiv preprint arXiv:2107.03374*.
 -   Guo, B., Zhang, X., Wang, Z., Jiang, M., Nie, J., Ding, Y., \... & Wu, Y. (2023). How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection. *arXiv preprint arXiv:2301.07597*.
 -   Sobania, D., Briesch, M., Hanna, C., & Petke, J. (2023). An Analysis of the Automatic Bug Fixing Performance of ChatGPT. *arXiv preprint arXiv:2301.08653*.
