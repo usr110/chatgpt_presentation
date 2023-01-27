@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.2.269">
 
   <meta name="author" content="Ali Abbas">
-  <title>ChatGPT: AI tools</title>
+  <title>ChatGPT: AI tools, applications and implications</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -92,6 +92,25 @@
     code span.va { color: #00e0e0; } /* Variable */
     code span.vs { color: #abe338; } /* VerbatimString */
     code span.wa { color: #dcc6e0; } /* Warning */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
   <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="theme/theme.css">
@@ -389,7 +408,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">ChatGPT: AI tools</h1>
+  <h1 class="title">ChatGPT: AI tools, applications and implications</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -400,62 +419,238 @@ Ali Abbas
 </div>
 
 </section>
-<section id="agenda" class="slide level2">
-<h2>Agenda</h2>
+<section id="agenda" class="title-slide slide level1 center">
+<h1>Agenda</h1>
 <ul>
-<li>Intro to ChatGPT</li>
-<li>Examples</li>
-<li>Tools using ChatGPT (or similar) modes</li>
-<li>Ethical issues</li>
-<li>Q/A</li>
+<li class="fragment">Intro to ChatGPT</li>
+<li class="fragment">State of the art</li>
+<li class="fragment">Examples</li>
+<li class="fragment">Tools using OpenAI models like ChatGPT (or similar) models</li>
+<li class="fragment">Issues</li>
+<li class="fragment">Summary</li>
 </ul>
 </section>
-<section id="chatgpt" class="slide level2" data-background-color="red">
-<h2>ChatGPT</h2>
-<ul>
-<li><a href="https://openai.com/blog/chatgpt/">ChatGPT: Optimizing Language Models for Dialogue</a></li>
-<li>Created by <a href="https://openai.com">OpenAI</a></li>
-<li>Debut in November 2022</li>
-<li>Viral due to usability and accessibility</li>
-<li>Built on GPT-3.5 series with Reinforcement Learning from Human Feedback</li>
-</ul>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
-</section>
-<section id="gif" class="slide level2">
-<h2>gif</h2>
 
-<img data-src="https://media.giphy.com/media/xUOxf7XfmpxuSode1O/giphy.gif" class="r-stretch"></section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
+<section>
+<section id="chatgpt" class="title-slide slide level1 center">
+<h1>ChatGPT</h1>
+
+</section>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li class="fragment"><a href="https://chat.openai.com">ChatGPT: Optimizing Language Models for Dialogue</a></li>
+<li class="fragment">Created by <a href="https://openai.com">OpenAI</a></li>
+<li class="fragment">Debut in November 2022</li>
+<li class="fragment">Viral due to usability and accessibility</li>
+<li class="fragment">Built on GPT-3.5 series with Reinforcement Learning from Human Feedback</li>
+<li class="fragment">Trained on a dataset of over 40GB of text data</li>
+<li class="fragment">With 175 billion parameters</li>
 </ul>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<section id="some-of-applications" class="slide level2">
+<h2>(Some of) Applications</h2>
+<ul>
+<li class="fragment">Text generation
+<ul>
+<li class="fragment">Coherent, creative on any topic and in specific style</li>
+</ul></li>
+<li class="fragment">Language translation
+<ul>
+<li class="fragment">Translation, idiomatic expressions and remembers context</li>
+</ul></li>
+<li class="fragment">Dialogue systems
+<ul>
+<li class="fragment">Conversational agents such as chatbots</li>
+</ul></li>
+<li class="fragment">Summarization
+<ul>
+<li class="fragment">Long to short summary and extract key information</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="state-of-the-art" class="title-slide slide level1 center">
+<h1>State of the Art</h1>
+
+</section>
+<section id="taxonomy-ai-models" class="slide level2">
+<h2>Taxonomy AI models</h2>
+
+<img data-src="img/state-of-art-gen-AI.png" class="r-stretch quarto-figure-center"><p class="caption">State of the art - popular generative models <span class="citation" data-cites="gozalo-brizuela2023">Gozalo-Brizuela and Garrido-Merchan (<a href="#/references-further-reading" role="doc-biblioref" onclick="">2023</a>)</span></p></section>
+<section id="companies" class="slide level2">
+<h2>Companies</h2>
+
+<img data-src="img/state-of-art-gen-AI-comps.png" class="r-stretch quarto-figure-center"><p class="caption">AI companies <span class="citation" data-cites="gozalo-brizuela2023">Gozalo-Brizuela and Garrido-Merchan (<a href="#/references-further-reading" role="doc-biblioref" onclick="">2023</a>)</span></p></section>
+<section id="timeline" class="slide level2">
+<h2>Timeline</h2>
+
+<img data-src="img/state-of-art-gen-AI-timeline.png" class="r-stretch quarto-figure-center"><p class="caption">Timeline <span class="citation" data-cites="gozalo-brizuela2023">Gozalo-Brizuela and Garrido-Merchan (<a href="#/references-further-reading" role="doc-biblioref" onclick="">2023</a>)</span></p></section></section>
+<section>
+<section id="examples" class="title-slide slide level1 center">
+<h1>Examples</h1>
+
+</section>
+<section id="note-to-neighbour" class="slide level2">
+<h2>Note to neighbour</h2>
+
+<img data-src="img/example-chatgpt-site.png" class="r-stretch"></section>
+<section id="poem" class="slide level2">
+<h2>Poem</h2>
+
+<img data-src="img/chatgpt-poem-cycling-walking.png" class="r-stretch quarto-figure-center"><p class="caption">Poem on benefits of Walking and Cycling</p></section>
+<section id="perplexity" class="slide level2">
+<h2><a href="https://www.perplexity.ai/">Perplexity</a></h2>
+<p>GPT based search engine</p>
+
+<img data-src="img/perplexity-pm2.5.png" class="r-stretch quarto-figure-center"><p class="caption">Children’s exposure to PM2.5 affecting their health</p></section>
+<section id="elicit" class="slide level2">
+<h2><a href="https://www.elicit.org">Elicit</a></h2>
+<p>GPT-3 powered AI tool for Literature Review</p>
+<video data-autoplay="" src="vid/elicit.mp4" width="100%" height="85%">
+</video>
+<!-- {{< (Elicit)[https://www.elicit.org] https://youtu.be/wo9vZccmqwc width="100%" height="85%" >}} -->
+</section></section>
+<section>
+<section id="tutorai" class="title-slide slide level1 center">
+<h1><a href="https://www.tutorai.me/">TutorAI</a></h1>
+<p>OpenAI powered AI tool for creating educational content</p>
+</section>
+<section id="tutorai-educational-content-creator" class="slide level2">
+<h2><a href="https://twitter.com/DannyHabibs/status/1598069511369867264"><img data-src="img/tutorAI-twitter.png" alt="TutorAI: Educational content creator"></a></h2>
+</section>
+<section id="tutorai-example---physical-activity-epidemiology-1" class="slide level2">
+<h2><img data-src="img/tutorAI-ex1.png" alt="TutorAI example - Physical Activity Epidemiology 1"></h2>
+</section>
+<section id="tutorai-example---physical-activity-epidemiology-2" class="slide level2">
+<h2><img data-src="img/tutorAI-ex2.png" alt="TutorAI example - Physical Activity Epidemiology 2"></h2>
+</section>
+<section id="rtutor" class="slide level2">
+<h2><a href="rtutor.ai/">RTutor</a></h2>
+<p>OpenAI’s powerful text-davinci-003 language model to translate natural language into R/Python code</p>
+
+<img data-src="img/rtutor.png" alt="OpenAI's powerful text-davinci-003 language model to translate natural language into R code" class="r-stretch quarto-figure-center"></section></section>
+<section>
+<section id="gptstudio" class="title-slide slide level1 center">
+<h1><a href="https://github.com/MichelNivard/gptstudio">gptstudio</a></h1>
+
+</section>
+<section id="comment-code" class="slide level2">
+<h2>Comment code</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://jameshwade.github.io/gpttools/"><video data-src="https://user-images.githubusercontent.com/6314313/209890944-3d6a00fa-2d8c-4df7-8a11-f5a5ec3a1391.mov" controls=""></video></a><a href="https://user-images.githubusercontent.com/6314313/209890944-3d6a00fa-2d8c-4df7-8a11-f5a5ec3a1391.mov">Video</a></p>
+<p></p><figcaption>Comment Code</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="convert-a-script-into-functions" class="slide level2">
+<h2>Convert a Script into Functions</h2>
+<p><a href="https://user-images.githubusercontent.com/6314313/209890949-4da2bdd7-bcac-4769-9b11-7759b4abb760.mov">Convert</a>](https://jameshwade.github.io/gpttools/)</p>
+</section></section>
+<section id="gpt-studio" class="title-slide slide level1 center">
+<h1><a href="https://jameshwade.github.io/gpttools/">GPT Studio</a></h1>
+<p>Add-on for RStudio for incorportaing OpenAI into project workflows</p>
+<video data-autoplay="" src="vid/gptstudio-chatting-example.mov" width="100%" height="85%">
+</video></section>
+
+<section>
+<section id="code" class="title-slide slide level1 center">
+<h1>Code</h1>
+
+</section>
+<section id="openai-r-library" class="slide level2">
+<h2>OpenAI R library</h2>
+<p><img src="img/open-AI-package.png" width="100%" height="85%"></p>
+</section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<p>Specify a string to create an image</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(openai)</span>
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(openai)</span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(magick)</span>
 <span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a>td <span class="ot">&lt;-</span> <span class="fu">create_image</span>(<span class="st">"simplicity"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a>img <span class="ot">&lt;-</span> openai<span class="sc">::</span><span class="fu">create_image</span>(<span class="st">"simplicity"</span>)</span>
 <span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="fu">print</span>(<span class="fu">image_read</span>(td<span class="sc">$</span>data<span class="sc">$</span>url))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="fu">print</span>(<span class="fu">image_read</span>(img<span class="sc">$</span>data<span class="sc">$</span>url))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  format width height colorspace matte filesize density
 1    PNG  1024   1024       sRGB FALSE  3147977   72x72</code></pre>
 </div>
-<div class="cell-output-display">
-<p><img data-src="presentation_files/figure-revealjs/unnamed-chunk-1-1.png" width="512"></p>
-</div>
-</div>
-<p><img src="https://www.mrc-epid.cam.ac.uk/wp-content/uploads/2021/10/colour-epi-logo.png" class="slide-logo"></p>
-<div class="footer footer-default">
 
 </div>
+<img data-src="presentation_files/figure-revealjs/unnamed-chunk-1-1.png" width="512" class="r-stretch"></section></section>
+<section id="directory-of-ai-tools" class="title-slide slide level1 center">
+<h1>Directory of AI tools</h1>
+
 </section>
+
+<section id="futurepedia" class="title-slide slide level1 center">
+<h1>Futurepedia</h1>
+<p>An AI tools library</p>
+<p><img src="img/futurepedia.png" width="100%" height="85%"></p>
+</section>
+
+<section>
+<section id="issues-and-summary" class="title-slide slide level1 center">
+<h1>Issues and Summary</h1>
+
+</section>
+<section id="issues" class="slide level2">
+<h2>Issues</h2>
+<ul>
+<li class="fragment">Easier access and universal applicability</li>
+<li class="fragment">Black box model
+<ul>
+<li class="fragment"><p>Limited knowledge on how they work</p></li>
+<li class="fragment"><p>When they fail</p></li>
+<li class="fragment"><p>Capabilities due to emergent properties - anxiety about unanticipated consequences</p></li>
+<li class="fragment"><p>Context is not known either</p></li>
+<li class="fragment"><p>Downstream bias: intrinsic bias, representational bias, underrepresented and over-represented (Anglocentric population) <span class="citation" data-cites="bommasani2021">Bommasani et al. (<a href="#/references-further-reading" role="doc-biblioref" onclick="">2021</a>)</span></p></li>
+<li class="fragment"><p>Compounds existing inequities by producing unfair outcomes, entrenching systems of power, and disproportionately distributing negative consequences of technology to those already marginalized <span class="citation" data-cites="bommasani2021">Bommasani et al. (<a href="#/references-further-reading" role="doc-biblioref" onclick="">2021</a>)</span></p></li>
+</ul></li>
+<li class="fragment">(Almost) exclusively build by industry (Google, Facebook, Microsoft, or Huawei, or startups such as OpenAI) <span class="citation" data-cites="bommasani2021">Bommasani et al. (<a href="#/references-further-reading" role="doc-biblioref" onclick="">2021</a>)</span></li>
+<li class="fragment">Nefarious purpose: fake news/propagandas, misinformation or any other harmful purpose</li>
+</ul>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li class="fragment"><p>Useful in assistance but with almost no transparency or reproducibility, so hard to justify in an academic setting</p></li>
+<li class="fragment"><p>Needs to be audited before wider use by academia or general public - legislation perhaps?</p></li>
+<li class="fragment"><p><a href="https://twitter.com/balajis/status/1617969414468694017">Rumour has it Google is lobbying DC to shut down other AI efforts, by scaremongering about how unsafe they are</a></p></li>
+<li class="fragment"><p>Need a similar but more transparent and less power/computational model</p>
+<ul>
+<li class="fragment">Among others, Alan Turing Institute is already working on it</li>
+</ul></li>
+<li class="fragment"><p>Unless careful attention is applied, it may produce erroneous or even dangerous outputs</p></li>
+</ul>
+</section>
+<section id="references-further-reading" class="slide level2 smaller scrollable">
+<h2>References / further reading</h2>
+<div>
+<ul>
+<li><a href="https://www.futurepedia.io/">Futurepedia: AI Tools directory</a></li>
+<li>Bommasani, Rishi, Drew A. Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S. Bernstein et al.&nbsp;“On the opportunities and risks of foundation models.” arXiv preprint arXiv:2108.07258 (2021).</li>
+<li>Gozalo-Brizuela, Roberto, and Eduardo C. Garrido-Merchan. “ChatGPT is not all you need. A State of the Art Review of large Generative AI models.” arXiv preprint arXiv:2301.04655 (2023).</li>
+<li>Chen, M., Tworek, J., Jun, H., Yuan, Q., Pinto, H. P. D. O., Kaplan, J., ... &amp; Zaremba, W. (2021). Evaluating large language models trained on code. <em>arXiv preprint arXiv:2107.03374</em>.</li>
+<li>Guo, B., Zhang, X., Wang, Z., Jiang, M., Nie, J., Ding, Y., ... &amp; Wu, Y. (2023). How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection. <em>arXiv preprint arXiv:2301.07597</em>.</li>
+<li>Sobania, D., Briesch, M., Hanna, C., &amp; Petke, J. (2023). An Analysis of the Automatic Bug Fixing Performance of ChatGPT. <em>arXiv preprint arXiv:2301.08653</em>.</li>
+</ul>
+</div>
+
+<img src="https://www.mrc-epid.cam.ac.uk/wp-content/uploads/2021/10/colour-epi-logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p>https://usr110.github.io/chatgpt_presentation/presentation.html</p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-bommasani2021" class="csl-entry" role="doc-biblioentry">
+Bommasani, Rishi, Drew A. Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S. Bernstein, et al. 2021. <span>“On the Opportunities and Risks of Foundation Models.”</span> <a href="https://doi.org/10.48550/ARXIV.2108.07258">https://doi.org/10.48550/ARXIV.2108.07258</a>.
+</div>
+<div id="ref-gozalo-brizuela2023" class="csl-entry" role="doc-biblioentry">
+Gozalo-Brizuela, Roberto, and Eduardo C. Garrido-Merchan. 2023. <span>“ChatGPT Is Not All You Need. A State of the Art Review of Large Generative AI Models.”</span> <a href="https://doi.org/10.48550/ARXIV.2301.04655">https://doi.org/10.48550/ARXIV.2301.04655</a>.
+</div>
+</div>
+</section></section>
     </div>
   </div>
 
@@ -610,7 +805,7 @@ Ali Abbas
         hideCursorTime: 5000,
 
         // Opens links in an iframe preview overlay
-        previewLinks: false,
+        previewLinks: true,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
         transition: 'none',

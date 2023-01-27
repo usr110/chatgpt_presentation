@@ -1,15 +1,18 @@
 ---
-title: "ChatGPT: AI tools"
+title: "ChatGPT: AI tools, applications and implications"
 author: "Ali Abbas"
 format: 
   revealjs:
     slide-number: true
-    incremental: false
+    incremental: true
     width: 1920
     height: 1080
+    embed-resources: false
+    preview-links: true
     logo: "https://www.mrc-epid.cam.ac.uk/wp-content/uploads/2021/10/colour-epi-logo.png"
+    footer: "https://usr110.github.io/chatgpt_presentation/presentation.html"
     css: ["theme/theme.css"]
-    theme: [dark]
+    theme: [dark, theme/custom.scss]
   html:
     code-copy: true
 editor: source
@@ -18,47 +21,184 @@ execute:
   warning: false
   message: false
   size: "huge"
+bibliography: references.bib
 ---
 
-## Agenda
+# Agenda
 
 -   Intro to ChatGPT
+-   State of the art
 -   Examples
--   Tools using ChatGPT (or similar) modes
--   Ethical issues
--   Q/A
+-   Tools using OpenAI models like ChatGPT (or similar) models
+-   Issues
+-   Summary
 
-## ChatGPT {background-color="red"}
+# ChatGPT
 
--   [ChatGPT: Optimizing Language Models for Dialogue](https://openai.com/blog/chatgpt/)
+## Overview
+
+-   [ChatGPT: Optimizing Language Models for Dialogue](https://chat.openai.com)
 -   Created by [OpenAI](https://openai.com)
 -   Debut in November 2022
 -   Viral due to usability and accessibility
 -   Built on GPT-3.5 series with Reinforcement Learning from Human Feedback
+-   Trained on a dataset of over 40GB of text data
+-   With 175 billion parameters
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+## (Some of) Applications
 
-## gif
+-   Text generation
+    -   Coherent, creative on any topic and in specific style
+-   Language translation
+    -   Translation, idiomatic expressions and remembers context
+-   Dialogue systems
+    -   Conversational agents such as chatbots
+-   Summarization
+    -   Long to short summary and extract key information
 
-![](https://media.giphy.com/media/xUOxf7XfmpxuSode1O/giphy.gif)
+# State of the Art
 
-## Bullets
+## Taxonomy AI models
 
-When you click the **Render** button a document will be generated that includes:
+![State of the art - popular generative models @gozalo-brizuela2023](img/state-of-art-gen-AI.png)
 
--   Content authored with markdown
--   Output from executable code
+## Companies
 
-## Code
+![AI companies @gozalo-brizuela2023](img/state-of-art-gen-AI-comps.png)
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Timeline
+
+![Timeline @gozalo-brizuela2023](img/state-of-art-gen-AI-timeline.png)
+
+# Examples
+
+## Note to neighbour
+
+![](img/example-chatgpt-site.png)
+
+## Poem
+
+![Poem on benefits of Walking and Cycling](img/chatgpt-poem-cycling-walking.png)
+
+## [Perplexity](https://www.perplexity.ai/)
+
+GPT based search engine
+
+![Children's exposure to PM2.5 affecting their health](img/perplexity-pm2.5.png)
+
+## [Elicit](https://www.elicit.org)
+
+GPT-3 powered AI tool for Literature Review
+
+<video data-autoplay src="vid/elicit.mp4" width="100%" height="85%">
+
+</video>
+
+<!-- {{< (Elicit)[https://www.elicit.org] https://youtu.be/wo9vZccmqwc width="100%" height="85%" >}} -->
+
+# [TutorAI](https://www.tutorai.me/)
+
+OpenAI powered AI tool for creating educational content
+
+## [![TutorAI: Educational content creator](img/tutorAI-twitter.png)](https://twitter.com/DannyHabibs/status/1598069511369867264)
+
+## ![TutorAI example - Physical Activity Epidemiology 1](img/tutorAI-ex1.png)
+
+## ![TutorAI example - Physical Activity Epidemiology 2](img/tutorAI-ex2.png)
+
+## [RTutor](rtutor.ai/)
+
+OpenAI's powerful text-davinci-003 language model to translate natural language into R/Python code
+
+[![](img/rtutor.png){fig-alt="OpenAI's powerful text-davinci-003 language model to translate natural language into R code"}](https://rtutor.ai/)
+
+# [gptstudio](https://github.com/MichelNivard/gptstudio)
+
+## Comment code
+
+[![Comment Code](https://user-images.githubusercontent.com/6314313/209890944-3d6a00fa-2d8c-4df7-8a11-f5a5ec3a1391.mov)](https://jameshwade.github.io/gpttools/)
+
+## Convert a Script into Functions
+
+[Convert](https://user-images.githubusercontent.com/6314313/209890949-4da2bdd7-bcac-4769-9b11-7759b4abb760.mov)\](https://jameshwade.github.io/gpttools/)
+
+# [GPT Studio](https://jameshwade.github.io/gpttools/)
+
+Add-on for RStudio for incorportaing OpenAI into project workflows
+
+<video data-autoplay src="vid/gptstudio-chatting-example.mov" width="100%" height="85%">
+
+# Code
+
+## OpenAI R library
+
+<image src="img/open-AI-package.png" width="100%" height="85%">
+
+## Example
+
+Specify a string to create an image
 
 ```{r}
+#| code-line-numbers: 4
+
 library(openai)
 library(magick)
 
-td <- create_image("simplicity")
+img <- openai::create_image("simplicity")
 
-print(image_read(td$data$url))
+print(image_read(img$data$url))
 
 ```
+
+# Directory of AI tools
+
+# Futurepedia
+
+An AI tools library
+
+<image src="img/futurepedia.png" width="100%" height="85%">
+
+# Issues and Summary
+
+## Issues
+
+-   Easier access and universal applicability
+-   Black box model
+    -   Limited knowledge on how they work
+
+    -   When they fail
+
+    -   Capabilities due to emergent properties - anxiety about unanticipated consequences
+
+    -   Context is not known either
+
+    -   Downstream bias: intrinsic bias, representational bias, underrepresented and over-represented (Anglocentric population) @bommasani2021
+
+    -   Compounds existing inequities by producing unfair outcomes, entrenching systems of power, and disproportionately distributing negative consequences of technology to those already marginalized @bommasani2021
+-   (Almost) exclusively build by industry (Google, Facebook, Microsoft, or Huawei, or startups such as OpenAI) @bommasani2021
+-   Nefarious purpose: fake news/propagandas, misinformation or any other harmful purpose
+
+## Summary
+
+-   Useful in assistance but with almost no transparency or reproducibility, so hard to justify in an academic setting
+
+-   Needs to be audited before wider use by academia or general public - legislation perhaps?
+
+-   [Rumour has it Google is lobbying DC to shut down other AI efforts, by scaremongering about how unsafe they are](https://twitter.com/balajis/status/1617969414468694017)
+
+-   Need a similar but more transparent and less power/computational model
+
+    -   Among others, Alan Turing Institute is already working on it
+
+-   Unless careful attention is applied, it may produce erroneous or even dangerous outputs
+
+## References / further reading
+
+::: nonincremental
+-   [Futurepedia: AI Tools directory](https://www.futurepedia.io/)
+-   Bommasani, Rishi, Drew A. Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S. Bernstein et al. "On the opportunities and risks of foundation models." arXiv preprint arXiv:2108.07258 (2021).
+-   Gozalo-Brizuela, Roberto, and Eduardo C. Garrido-Merchan. "ChatGPT is not all you need. A State of the Art Review of large Generative AI models." arXiv preprint arXiv:2301.04655 (2023).
+-   Chen, M., Tworek, J., Jun, H., Yuan, Q., Pinto, H. P. D. O., Kaplan, J., \... & Zaremba, W. (2021). Evaluating large language models trained on code. *arXiv preprint arXiv:2107.03374*.
+-   Guo, B., Zhang, X., Wang, Z., Jiang, M., Nie, J., Ding, Y., \... & Wu, Y. (2023). How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection. *arXiv preprint arXiv:2301.07597*.
+-   Sobania, D., Briesch, M., Hanna, C., & Petke, J. (2023). An Analysis of the Automatic Bug Fixing Performance of ChatGPT. *arXiv preprint arXiv:2301.08653*.
+:::
